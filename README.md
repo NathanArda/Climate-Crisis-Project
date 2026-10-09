@@ -9,8 +9,15 @@
 - Footer required
 - Mobile first development
 ## Siberia: Wild Fires 
-  
-## Sources
+### Background
+
+### Issue
+
+### Government Response
+
+### What You Can Do
+
+### Sources
 1. https://www.themoscowtimes.com/2025/05/13/siberias-buryatia-declares-wildfire-emergency-a89059
 2. https://en.wikipedia.org/wiki/2025_Russian_wildfires
 3. https://www.ecohubmap.com/hot-spot/siberian-wildfires/61mlrbklfzriwwd
