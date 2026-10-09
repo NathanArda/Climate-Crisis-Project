@@ -6,6 +6,7 @@
 - It needs to use primarily Flexbox layout [Grid is also fine!] 
 -you can use box model for a single component obviously 
 - Footer required
+- Mobile first development
 ## Siberia: Wild Fires 
 
 ## Sources
