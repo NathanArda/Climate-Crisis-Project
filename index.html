@@ -1,48 +1,74 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet" />
-    <link>
+    <title>Siberian Wildfires</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!--ham burger nav bar-->
-    <nav class='sticky-nav'>
-        <a href="#" class='active'>Logo</a>
-        <div id='nav-links'>
-            <a href="#"></a>
-            <a href="#"></a>
-        </div>
-        <a href='#' class ='icon' onclic></a>
-    </nav>
+    <header class="site-header" id="top">
+        <a class="site-title" href="#top">Siberian Wildfires</a>
 
-    <div class='card-container'>
-        <img href="">
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+            <details>
+                <summary aria-label="Open navigation menu"><span class="menu-icon" aria-hidden="true"></span></summary>
+                <ul class="nav-links">
+                    <li><a href="#background">Background</a></li>
+                    <li><a href="#issue">Issue</a></li>
+                    <li><a href="#government-response">Government Response</a></li>
+                    <li><a href="#what-can-you-do">What Can You Do</a></li>
+                    <li><a href="#sources">Sources</a></li>
+                </ul>
+            </details>
+        </nav>
 
-        <h2 class='background-header'>Background</h2>
-        <p>Insert Text</p>
-        <!-- Darker color in black  -->
-        <h2 class=' issue-header'>Issue</h2>
-        <p>Insert Text</p>
-        <h2 class='government-header'>Government Response</h2>
-        <!-- Black background with for card text -->
-        <p>Insert Text</p>
-        <h2 class='you-do-header'>What Can You Do</h2>
-        <p>Insert Text</p>
-        <h2 class='source-header'>Sources</h2>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+        <nav class="desktop-nav" aria-label="Desktop navigation">
+            <ul class="nav-links">
+                <li><a href="#background">Background</a></li>
+                <li><a href="#issue">Issue</a></li>
+                <li><a href="#government-response">Government Response</a></li>
+                <li><a href="#what-can-you-do">What Can You Do</a></li>
+                <li><a href="#sources">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class ='hero'>
+        <h1>Siberian Wildfires</h1>
+    </section>
+
+    <main class="card-container">
+        <section id="background">
+            <h2 class="background-header">Background</h2>
+            <p>Insert Text</p>
+        </section>
+        <section id="issue">
+            <h2 class="issue-header">Issue</h2>
+            <p>Insert Text</p>
+        </section>
+        <section id="government-response">
+            <h2 class="government-header">Government Response</h2>
+            <p>Insert Text</p>
+        </section>
+        <section id="what-can-you-do">
+            <h2 class="you-do-header">What Can You Do</h2>
+            <p>Insert Text</p>
+        </section>
+        <section id="sources">
+            <h2 class="source-header">Sources</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+
     <footer class="footer-container">
-
+        <p>Siberian Wildfires · <a href="#top">Back to top</a></p>
     </footer>
 </body>
-
 </html>
