@@ -17,8 +17,7 @@ html {
 
 body {
     margin: 0;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background: var(--primary-color);
@@ -26,41 +25,9 @@ body {
     font-family: Inter, sans-serif;
     line-height: 1.5;
 }
-
-.MainContainer {
-    flex: 1;
-    min-height: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-
-    perspective: 1px;
-    transform-style: preserve-3d;
-    scroll-behavior: smooth;
-}
-.ParallaxContainer {
-    display: flex;
-    position: relative;
-    height:100vh;
-    width:100%;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url("images/backgroundTrees.jpg");
-    background-color: rgb(250, 228, 216);
-    z-index: -1;
-    transform: translateZ(-1px) scale(2);
-}
-.ContentContainer {
-    position: relative;
-    z-index: 1;
-    display: flow-root;
-    background: var(--primary-color);
-}
-/*.hero {
+.hero {
     height: 100vh;
-    background-image: url("");
+    background-image: url("images/backgroundTrees.jpg");
     background-size: 100%;
     background-color: var(--primary-color);
     background-position: center;
@@ -69,7 +36,7 @@ body {
     place-items: center;
 
     transform: opacity 0.3s ease;
-}*/
+}
 
 h1 {
     color: var(--secondary-color);
@@ -102,8 +69,7 @@ a:hover {
     text-decoration: none;
 }
 
-.mobile-nav,
-.mobile-nav summary {
+.mobile-nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,6 +126,11 @@ a:hover {
     box-shadow: 0 0.5rem 1rem #0005;
 }
 
+.mobile-nav summary {
+    list-style: none;
+    cursor: pointer;
+}
+
 .mobile-nav summary::-webkit-details-marker {
     display: none;
 }
@@ -169,9 +140,8 @@ a:hover {
     text-decoration: none;
 }
 
-.nav-links a:hover,
-.nav-links a:focus-visible{
-    background: var(--card-color);
+.nav-links a:hover {
+    background: var(--secondary-color);
 }
 
 .desktop-nav {
