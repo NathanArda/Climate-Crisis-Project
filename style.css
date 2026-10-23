@@ -1,0 +1,214 @@
+/* style.css */
+:root {
+    --primary-color: #222831;
+    --secondary-color: #f1f2f4;
+    --tridary-color: #948979;
+    --card-color: #d8dadf;
+    --font-color: #dfd0b8;
+}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-color);
+    color: var(#222831);
+    font-family: Inter, sans-serif;
+    line-height: 1.5;
+}
+.hero {
+    height: 100vh;
+    background-image: url("images/backgroundTrees.jpg");
+    background-size: 100%;
+    background-color: var(--primary-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+
+    transform: opacity 0.3s ease;
+}
+
+h1 {
+    color: var(--secondary-color);
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 4rem;
+    padding: 0.75rem 1rem;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    z-index: 10;
+}
+
+.site-title {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    cursor: pointer;
+    list-style: none;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    border-radius: 2px;
+    background: currentColor;
+}
+
+.menu-icon {
+    position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.menu-icon::before {
+    top: -0.45rem;
+}
+
+.menu-icon::after {
+    top: 0.45rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    list-style: none;
+}
+
+.mobile-nav .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: var(--secondary-color);
+    box-shadow: 0 0.5rem 1rem #0005;
+}
+
+.mobile-nav summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.mobile-nav summary::-webkit-details-marker {
+    display: none;
+}
+.nav-links a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background: var(--secondary-color);
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.card-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: min(100% - 2rem, 70rem);
+    margin: 1.5rem auto;
+    border: 1px solid #6b7280;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card-container section {
+    padding: 1.5rem;
+    scroll-margin-top: 4rem;
+    background: var(--card-color);
+}
+
+.card-container section:nth-child(even) {
+    background: var(--secondary-color);
+}
+
+.card-container h2 {
+    margin: 0 0 0.75rem;
+}
+
+.card-container p {
+    margin: 0;
+}
+
+.card-container ul {
+    margin-bottom: 0;
+}
+
+.card-container li:first-child,
+.card-container li:last-child {
+    padding-block: 0.125rem;
+}
+
+.footer-container {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    background: var(--secondary-color);
+}
+
+.footer-container p {
+    margin: 0;
+}
+
+@media (min-width: 800px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: block;
+    }
+
+    .desktop-nav .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+    }
+}
