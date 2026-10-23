@@ -47,7 +47,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background: url("images/backgroundTrees.jpg");
+    background-image: url("images/backgroundTrees.jpg");
     background-color: rgb(250, 228, 216);
     z-index: -1;
     transform: translateZ(-1px) scale(2);
@@ -169,8 +169,9 @@ a:hover {
     text-decoration: none;
 }
 
-.nav-links a:hover {
-    background: var(--secondary-color);
+.nav-links a:hover,
+.nav-links a:focus-visible{
+    background: var(--card-color);
 }
 
 .desktop-nav {
