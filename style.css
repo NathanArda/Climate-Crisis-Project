@@ -67,6 +67,8 @@ body {
     background-color: rgb(250, 228, 216);
     z-index: -1;
     transform: translateZ(-1px) scale(2);
+
+    font-size: 10px;
 }
 /*
 .ContentContainer::before{
@@ -81,13 +83,18 @@ body {
 .ContentContainer::before{
     content: "";
     position: absolute;
-    bottom: -100%; 
-    left: 0%;
-    width: 200vh;
-    height: 400vh;
+    display: block;
+    bottom: 100%; 
+    width: 500vh;
+    height: 100vh;
 
-    background-image: url("treeline.svg");
-    background-size: contain;
+    background-image:
+        url("treeline.svg"),
+        url("treeline.svg"),
+        url("treeline.svg");
+    clip-path: inset(0% 60% 0% 0%);
+    background-size: cover;
+    background-position: 80px 70%, -100px 65%, -1000px 70%;
     background-repeat: no-repeat;
 }
 
@@ -283,5 +290,10 @@ a:hover {
         flex-wrap: wrap;
         align-items: center;
         padding: 0;
+    }
+
+    .ParallaxContainer{
+        color: red;
+        font-size: 1rem;
     }
 }
