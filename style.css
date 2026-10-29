@@ -15,11 +15,12 @@
   font-style: normal;
 }
 :root {
-    --primary-color: #000000;
-    --secondary-color: #477780;
-    --tridary-color: #2e2b3b;
+    --primary-color: #201c31;
+    --secondary-color: #4a5a6e;
+    --tridary-color: #b3b3b3;
     --card-color: #d8dadf;
     --font-color: #dfd0b8;
+    --background-color: #010101;
 }
 * {
     box-sizing: border-box;
@@ -36,7 +37,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    background: var(--primary-color);
+    background: black;
     color: var(#222831);
     font-family: Inter, sans-serif;
     line-height: 1.5;
@@ -67,12 +68,37 @@ body {
     z-index: -1;
     transform: translateZ(-1px) scale(2);
 }
+/*
+.ContentContainer::before{
+  width: 24px;;
+  height: 24px;
+  background-image: url('treeline.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}*/
+
+.ContentContainer::before{
+    content: "";
+    position: absolute;
+    bottom: -100%; 
+    left: 0%;
+    width: 200vh;
+    height: 400vh;
+
+    background-image: url("treeline.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .ContentContainer {
     position: relative;
+    margin-top: 300px;
     z-index: 1;
     display: flow-root;
-    background: var(--primary-color);
+    background: black;
 }
+
 /*.hero {
     height: 100vh;
     background-image: url("");
@@ -109,7 +135,7 @@ a:hover {
     padding: 0.75rem 1rem;
     background: var(--secondary-color);
     color: white;
-    background: linear-gradient(var(--secondary-color), 5%, var(--tridary-color));
+    background: linear-gradient(var(--secondary-color), 5%, var(--primary-color));
     z-index: 10;
 }
 
@@ -212,7 +238,7 @@ a:hover {
 }
 
 .card-container section:nth-child(even) {
-    background: var(--secondary-color);
+    background: var(--tridary-color);
 }
 
 .card-container h2 {
@@ -236,7 +262,7 @@ a:hover {
     padding: 1.5rem 1rem;
     text-align: center;
     color: white;
-    background: var(--tridary-color);
+    background: var(--primary-color);
 }
 
 .footer-container p {
