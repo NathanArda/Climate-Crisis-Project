@@ -1,6 +1,12 @@
 /* style.css */
+.unica-one-font {
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
-    --primary-color: #222831;
+    --primary-color: #000000;
     --secondary-color: #f1f2f4;
     --tridary-color: #948979;
     --card-color: #d8dadf;
