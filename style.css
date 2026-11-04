@@ -247,7 +247,7 @@ a:hover {
 }
 
 .card-container section:nth-child(even) {
-    /*background: var(--tridary-color);*/
+    background: var(--tridary-color);
 }
 
 .card-container h2 {
