@@ -22,6 +22,7 @@
     --font-color: #dfd0b8;
     --background-color: #010101;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -220,7 +221,8 @@ a:hover {
 
 .nav-links a:hover,
 .nav-links a:focus-visible{
-    background: var(--card-color);
+    /*background: var(--card-color);*/
+    text-shadow: 0 0 7px #dfd0b8;
 }
 
 .desktop-nav {
@@ -245,7 +247,7 @@ a:hover {
 }
 
 .card-container section:nth-child(even) {
-    background: var(--tridary-color);
+    /*background: var(--tridary-color);*/
 }
 
 .card-container h2 {
